@@ -1,5 +1,5 @@
 game.StarterGui:SetCore("SendNotification",  {
- Title = "mentality";
+ Title = "mentality [V to toggle]";
  Text = "made by 5drc dm for support";
  Icon = "http://www.roblox.com/asset/?id=951528747";
  Duration = 98083905839058095809389034;
@@ -2143,4 +2143,8 @@ end)
 
 Section:NewButton("ESP", "uhh excuse me nigga? x2", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
+end)
+
+Section:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.V, function()
+	Library:ToggleUI()
 end)
