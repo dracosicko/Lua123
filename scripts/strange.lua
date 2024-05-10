@@ -2145,6 +2145,9 @@ Section:NewButton("ESP", "uhh excuse me nigga? x2", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
 end)
 
-Section:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.V, function()
+local Tab = Window:NewTab("Toggle UI")
+local Section = Tab:NewSection("Click to change the keybind to your liking")
+
+Section:NewKeybind("Keybind", "a...", Enum.KeyCode.V, function()
 	Library:ToggleUI()
 end)
